@@ -11,4 +11,3 @@ int  my_print_alpha(void)
    my_putchar('\n');
    return (0);
 }
-
