@@ -1,6 +1,7 @@
 int my_print_comb(void)
 {
-  char a = 48, b = 48, c = 48;
+  char a , b , c;
+  a = 48;
    while (a <= 57)
     {
       b = a + 1;
@@ -8,18 +9,21 @@ int my_print_comb(void)
        { 
 	c = b + 1;
 	 while (c <= 57)
-	{
-	 my_putchar(a);
-	 my_putchar(b);
-	 my_putchar(c);
-	 my_putchar(',');
-	 my_putchar(' ');
-	 c++;
-	}
-	 b++; 
+	  {
+	   my_putchar(a);
+	   my_putchar(b);
+	   my_putchar(c);
+	   if (a != 55)
+	   {
+	    my_putchar(',');
+	    my_putchar(' ');
+	   }
+	  c++;
+	 }
+	b++; 
        }
      a++;
    }
-   my_putchar('\n')
-    return (0);
+   my_putchar('\n');
+   return (0);
 }
